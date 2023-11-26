@@ -15,7 +15,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<sonar.login>sqp_c308acfb6eef5c3ec8792c2a1b6c7d67494768cd</sonar.login>
+		<sonar.host.url>http://3.143.141.105:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin123</sonar.password>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -29,20 +31,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<profiles>
-	<profile>
-		<id>sonar</id>
-		<activation>
-		<activeByDefault>true</activeByDefault>
-		</activation>
-		<properties>
-		<!-- Optional URL to server. Default value is http://localhost:9000 -->
-		<sonar.host.url>
-		http://3.143.141.105:9000
-		</sonar.host.url>
-		</properties>
-	</profile>
-</profiles>
 
 	<build>
 		<plugins>
